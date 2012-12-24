@@ -66,12 +66,6 @@
 					<instructions>
 						<manifestLocation>META-INF</manifestLocation>
 						<!-- Bundle-Activator>gladkiy.jax_rs_test.Activator</Bundle-Activator -->
-						<Require-bundle>
-							org.apache.cxf.bundle,
-							org.springframework.beans,
-							org.springframework.context,
-							org.springframework.osgi.core
-						</Require-bundle>
 					</instructions>
 				</configuration>
 			</plugin>
