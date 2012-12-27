@@ -6,7 +6,7 @@ import javax.jws.WebService;
 @WebService(targetNamespace = "http://StringWrapper.com")
 public interface StringWrapperService {
 
-	public StringWrapper parseString(String string);
+	public StringWrapper getParsedString(String string);
 
 
 }

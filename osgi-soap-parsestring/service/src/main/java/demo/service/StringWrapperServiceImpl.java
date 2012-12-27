@@ -9,7 +9,7 @@ import demo.common.StringWrapperService;
 @WebService(endpointInterface = "demo.common.StringWrapperService", serviceName = "StringWrapper")
 public class StringWrapperServiceImpl implements StringWrapperService {
 
-	public StringWrapper parseString(String string) {
+	public StringWrapper getParsedString(String string) {
 
 		return new StringWrapper(string);
 	}
