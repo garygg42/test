@@ -33,8 +33,7 @@
 						<Require-Bundle>
 							org.apache.cxf.bundle,
 							org.springframework.beans,
-							org.springframework.context,sam-common,sam-agent,
-							locator
+							org.springframework.context,sam-common,sam-agent
 						</Require-Bundle>
 						<Import-Package>
 							demo.common,org.springframework.context.support,org.talend.esb.servicelocator.cxf,javax.jws
