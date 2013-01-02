@@ -36,7 +36,7 @@
 							org.springframework.context,sam-common,sam-agent
 						</Require-Bundle>
 						<Import-Package>
-							demo.common,org.springframework.context.support,org.talend.esb.servicelocator.cxf,javax.jws
+							demo.common,org.springframework.context.support,javax.jws
 						</Import-Package>
 					</instructions>
 				</configuration>

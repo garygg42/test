@@ -1,4 +1,3 @@
-
 package demo.common;
 
 import javax.jws.WebService;
@@ -7,6 +6,5 @@ import javax.jws.WebService;
 public interface StringWrapperService {
 
 	public StringWrapper getParsedString(String string);
-
 
 }
