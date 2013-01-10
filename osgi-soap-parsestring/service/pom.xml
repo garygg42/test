@@ -36,7 +36,7 @@
 							org.springframework.context,sam-common,sam-agent
 						</Require-Bundle>
 						<Import-Package>
-							demo.common,org.springframework.context.support,javax.jws
+							demo.common,org.springframework.context.support,javax.jws,org.apache.cxf.management.jmx,org.apache.cxf.management.counters
 						</Import-Package>
 					</instructions>
 				</configuration>

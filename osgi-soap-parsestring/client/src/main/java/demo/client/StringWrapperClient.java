@@ -14,57 +14,57 @@ import demo.common.StringWrapperService;
 
 public final class StringWrapperClient {
 
-    public static String getRandomString() {
-	String generatedRandomString = "";
-	Random rand = new Random();
-	for (int i = 0; i < 10; i++) {
-	    generatedRandomString += (char) (rand.nextInt(25) + 97);
+	public static String getRandomString() {
+		String generatedRandomString = "";
+		Random rand = new Random();
+		for (int i = 0; i < 10; i++) {
+			generatedRandomString += (char) (rand.nextInt(25) + 97);
+		}
+		return generatedRandomString;
 	}
-	return generatedRandomString;
-    }
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-	ClassPathXmlApplicationContext context = null;
+		ClassPathXmlApplicationContext context = null;
 
-	context = new ClassPathXmlApplicationContext(
-		new String[] { "META-INF/spring/beans.xml" });
+		context = new ClassPathXmlApplicationContext(
+				new String[] { "META-INF/spring/beans.xml" });
 
-	StringWrapperService client = (StringWrapperService) context
-		.getBean("stringWrapperClient");
+		StringWrapperService client = (StringWrapperService) context
+				.getBean("stringWrapperClient");
 
-	ArrayList<String> requests = new ArrayList<String>();
+		ArrayList<String> requests = new ArrayList<String>();
 
-	for (int i = 0; i < 25; i++) {
-	    requests.add(StringWrapperClient.getRandomString());
+		for (int i = 0; i < 25; i++) {
+			requests.add(StringWrapperClient.getRandomString());
+		}
+		System.out.println("#####################################");
+		System.out.println("#Testing service with 25 random words");
+		System.out.println("#####################################");
+		for (String string : requests) {
+			JAXBContext jaxbContext;
+			try {
+				jaxbContext = JAXBContext.newInstance(StringWrapper.class);
+
+				Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
+
+				jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT,
+						true);
+
+				jaxbMarshaller.marshal(client.getParsedString(string),
+						System.out);
+			} catch (JAXBException e) {
+				e.printStackTrace();
+			}
+		}
+		System.out.println("#####################################");
+		System.out.println("#Throwing business exception");
+		System.out.println("#####################################");
+		try {
+			client.getParsedString("AAA123");
+		} catch (RuntimeException e) {
+			e.printStackTrace();
+		}
 	}
-	System.out.println("#####################################");
-	System.out.println("#Testing service with 25 random words");
-	System.out.println("#####################################");
-	for (String string : requests) {
-	    JAXBContext jaxbContext;
-	    try {
-		jaxbContext = JAXBContext.newInstance(StringWrapper.class);
-
-		Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
-
-		jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT,
-			true);
-
-		jaxbMarshaller.marshal(client.getParsedString(string),
-			System.out);
-	    } catch (JAXBException e) {
-		e.printStackTrace();
-	    }
-	}
-	System.out.println("#####################################");
-	System.out.println("#Throwing business exception EVERYTHING OK");
-	System.out.println("#####################################");
-	try {
-	    client.getParsedString("AAA123");
-	} catch(RuntimeException e) {
-	    e.printStackTrace();
-	}
-    }
 
 }

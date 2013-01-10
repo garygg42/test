@@ -8,7 +8,7 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
 http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 	
 	<jaxws:client id="stringWrapperClient" serviceClass="demo.common.StringWrapperService"
-		address="http://localhost:8040/services/soap" />
+		address="http://localhost:8040/services/stringWrapper" />
 
 </beans>
 
