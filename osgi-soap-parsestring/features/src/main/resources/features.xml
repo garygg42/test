@@ -3,7 +3,7 @@
     <!-- repository>mvn:org.talend.esb/features/${project.version}/xml</repository -->
     <feature name='osgi-parsestring' version='${project.version}'>
         <feature>cxf</feature>
-        <!-- bundle>mvn:${project.groupId}/osgi-soap-parsestring-demo-common/${project.version}</bundle -->
+        <bundle>mvn:${project.groupId}/osgi-soap-parsestring-demo-common/${project.version}</bundle>
         <bundle>mvn:${project.groupId}/osgi-soap-parsestring-demo-service/${project.version}</bundle>
     </feature>
 </features>
