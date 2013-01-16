@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.talend.esb.examples.osgi-soap-parsestring</groupId>
 	<artifactId>osgi-soap-parsestring-demo-service</artifactId>
-	<name>OSGI StringWrapper Demo Service</name>
+	<name>StringWrapper Demo Service</name>
 	<packaging>bundle</packaging>
 
 	<parent>

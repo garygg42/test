@@ -3,8 +3,8 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.talend.esb.examples.osgi-soap-parsestring</groupId>
-	<artifactId>osgi-soap-parsestring-demo-client</artifactId>
-	<name>StringWrapper Demo Client</name>
+	<artifactId>osgi-soap-parsestring-demo-client-gui</artifactId>
+	<name>StringWrapper Demo Client with GUI</name>
 	<packaging>jar</packaging>
 
 	<parent>
@@ -51,7 +51,7 @@
                 </executions>
                 <configuration>
                     <executable>java</executable>
-                    <mainClass>demo.client.StringWrapperClient</mainClass>
+                    <mainClass>demo.client.StringWrapperClientGUI</mainClass>
                     <commandlineArgs>${commandline.args}</commandlineArgs>
                 </configuration>
             </plugin>

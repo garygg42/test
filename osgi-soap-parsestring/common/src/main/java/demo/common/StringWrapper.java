@@ -44,7 +44,7 @@ public class StringWrapper {
 		super();
 	}
 
-	public StringWrapper(String source) {
+	public StringWrapper(String source) throws IllegalArgumentException{
 		super();
 		if (StringWrapper.isContainsNumbers(source)) {
 			throw new IllegalArgumentException("request contains numbers");

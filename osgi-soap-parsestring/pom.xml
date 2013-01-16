@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.talend.esb.examples.osgi-soap-parsestring</groupId>
     <artifactId>osgi-soap-parsestring-demo</artifactId>
-    <name>Talend ESB Runtime Examples :: OSGI StringWrapper Example</name>
+    <name>StringWrapper Service Example</name>
     <packaging>pom</packaging>
 
     <parent>
@@ -16,6 +16,7 @@
 
     <modules>
 		<module>client</module>
+		<module>client-gui</module>
 		<module>common</module>
         <module>service</module>
 		<module>features</module>
