@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1358435318434
+Build-Jdk: 1.7.0_09
+Built-By: Igor.Gladkiy
+Bundle-ManifestVersion: 2
+Bundle-Name: StringWrapper Demo Common
+Bundle-SymbolicName: parsestring-demo-common
+Bundle-Version: 5.3.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: demo.common;uses:="javax.xml.bind.annotation,javax.jws";
+ version="5.3.0.SNAPSHOT"
+Import-Package: javax.jws,javax.xml.bind.annotation
+Tool: Bnd-1.50.0
