@@ -16,6 +16,7 @@
 		<module>common</module>
 		<module>service</module>
 		<module>features</module>
+		<module>client-many-inv</module>
 	</modules>
 
 	<properties>
