@@ -1,7 +1,7 @@
 Starting the Service
 --------------------
 Add maven URL into karaf:
-	features:addurl mvn:org.examples.parsestring/features/5.3.0-SNAPSHOT/xml
+	features:addurl mvn:org.examples.parsestring/features/1.0.0/xml
 
 Install example feature in container:
 	features:install parsestring
