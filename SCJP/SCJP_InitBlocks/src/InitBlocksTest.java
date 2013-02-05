@@ -5,7 +5,6 @@ public class InitBlocksTest {
      */
     public static void main(String[] args) {
         new Son();
-        System.out.println("test");
     }
 
 }
