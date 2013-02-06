@@ -21,6 +21,39 @@ class Dog {
 }
 
 class Cat {
+    public String name;
+
+    public Cat() {
+        super();
+        Random rand = new Random();
+        this.name = Integer.valueOf(rand.nextInt()).toString();
+    }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((name == null) ? 0 : name.hashCode());
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Cat other = (Cat) obj;
+        if (name == null) {
+            if (other.name != null)
+                return false;
+        } else if (!name.equals(other.name))
+            return false;
+        return true;
+    }
+    
 }
 
 enum Pets {
@@ -42,7 +75,9 @@ class CatDogTest {
         Pets p = Pets.CAT;
         System.out.println(m.get(p)); // #3
         System.out.println(m.get(d1)); // #4
+        
         System.out.println(m.get(new Cat())); // #5
+        
         System.out.println(m.size()); // #6
     }
 }
