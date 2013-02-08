@@ -5,7 +5,8 @@ public class StringTest {
      * @param args
      */
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
+        String x = "big surprise";
+        System.out.println( x.toString() );
 
     }
 
