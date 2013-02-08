@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="SCJP_AccessModifiers/src"/>
+	<classpathentry kind="src" path="SCJP_Arrays/src"/>
+	<classpathentry kind="src" path="SCJP_Boxing/src"/>
+	<classpathentry kind="src" path="SCJP_Collections/src"/>
+	<classpathentry kind="src" path="SCJP_Constructors/src"/>
+	<classpathentry kind="src" path="SCJP_Enums/src"/>
+	<classpathentry kind="src" path="SCJP_Exceptions/src"/>
+	<classpathentry kind="src" path="SCJP_GC/src"/>
+	<classpathentry kind="src" path="SCJP_InitBlocks/src"/>
+	<classpathentry kind="src" path="SCJP_Interfaces/src"/>
+	<classpathentry kind="src" path="SCJP_Operators/src"/>
+	<classpathentry kind="src" path="SCJP_Passing/src"/>
+	<classpathentry kind="src" path="SCJP_Polymorphism/src"/>
+	<classpathentry kind="src" path="SCJP_Serialisation/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="SCJP_Serialisation/bin"/>
+</classpath>
