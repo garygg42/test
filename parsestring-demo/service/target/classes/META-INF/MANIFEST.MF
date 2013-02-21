@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1360332587161
+Bnd-LastModified: 1361440343485
 Build-Jdk: 1.7.0_09
 Built-By: Igor.Gladkiy
 Bundle-ManifestVersion: 2
@@ -11,7 +11,8 @@ Export-Package: demo.service;uses:="demo.common,javax.jws";version="1.0.
  0"
 Import-Package: demo.common;version="[1.0,2)",javax.jws,org.apache.cxf.m
  anagement.counters,org.apache.cxf.management.jmx,org.springframework.co
- ntext.support;version="[3.0,4)"
+ ntext.support;version="[3.0,4)",org.talend.esb.servicelocator.cxf;versi
+ on="[5.2,6)"
 Require-Bundle: org.apache.cxf.bundle,org.springframework.beans,org.spri
- ngframework.context,sam-common,sam-agent
+ ngframework.context,sam-common,sam-agent,locator
 Tool: Bnd-1.50.0
