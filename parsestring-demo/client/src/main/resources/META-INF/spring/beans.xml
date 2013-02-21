@@ -15,8 +15,8 @@ http://www.springframework.org/schema/util/spring-util-3.0.xsd ">
 
 
     <jaxws:client id="stringWrapperClient" xmlns:s="http://StringWrapper.com"
-        serviceClass="demo.common.StringWrapperService"
-        serviceName="s:StringWrapper" address="locator://stringWrapper">
+        serviceClass="demo.common.StringWrapperService" serviceName="s:StringWrapper"
+        address="locator://stringWrapper">
         <jaxws:features>
             <bean class="org.talend.esb.servicelocator.cxf.LocatorFeature">
             </bean>
